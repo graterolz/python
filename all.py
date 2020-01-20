@@ -159,14 +159,40 @@ def dictionaryDemo():
 	}
 	print(student['name'])
 	print(student.get('last_name','Unknow'))
-
+	print(student.keys())
+	print(student.values())
+	#
+	student['name'] = 'James'
+	print(student['name'])
+	#
+	del student['name']
+	print(student.keys())
 	#
 	all_student = [
 		{'name' : 'Mark', 'student_id' : 15163},
 		{'name' : 'Katarina', 'student_id' : 63112},
 		{'name' : 'Jessica', 'student_id' : 30021}
 	]
-	# print(all_student[0])
+	print(all_student[0])
+#
+def exceptionDemo():
+	student = {
+		'name': 'Mark',
+		'student_id': 15163,
+		'feedback' : None
+	}
+	student['last_name'] = 'Kowalski'
+	try:
+		last_name = student['last_name']
+		numbered_last_name = 3 + last_name
+	except KeyError:
+		print('Error finding last_name')
+	except TypeError:
+		print("I can't add these two together!")
+	except Exception:
+		print('Unknown error')
+	print('This code executes!')
+
 
 ##########
 # sayHello()
@@ -186,4 +212,5 @@ def dictionaryDemo():
 # continueBreakDemo()
 # whileLoopDemo()
 # whileLoopDemo2()
-dictionaryDemo()
+# dictionaryDemo()
+exceptionDemo()
