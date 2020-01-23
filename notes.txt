@@ -1,0 +1,13 @@
+# Package Manager for Python
+pip install flask -> Install Flask Framework
+pip install virtualenv -> Install Virtual Environment
+pip install pipenv -> Install pipenv (like virtualenv)
+#
+virtualenv <environment_name>
+virtualenv --python=python2.7 <environment_name>
+#
+pipenv install requests -> Create Pipfile Blank
+#
+pip install pyinstaller
+pyinstaller <file_py>
+pyinstaller --onefile <file_py>
