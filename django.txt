@@ -1,0 +1,22 @@
+Install DJANGO -> python -m pip install django
+New Project -> django-admin startproject <project_name>
+Run Server (Into Folder Project) -> python manage.py runserver
+Create an App -> python manage.py startapp <name_app>
+Show Migrates -> python manage.py showmigrations
+Execute Migrates ->python manage.py migrate
+Connect to Database -> python manage.py dbshell
+Show Tables (SQLite3) -> .tables
+SELECT (Migrates) -> SELECT * FROM django_migrations;
+Exit to Database -> .exit
+View Changes Pendings Database (Migrations PY) -> python manage.py makemigrations
+Vier Migrate in SQL -> python manage.py sqlmigrate meetings 0001
+Create superuser (admin) -> python manage.py createsuperuser
+--
+--
+--
+Comandos:
+
+Create Entorno virtual -> python -m venv <name_entorno_virtual>
+Activar Entorno virtual ->
+	P1. cd <name_entorno_virtual>
+	P2. Scripts\activate
