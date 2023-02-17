@@ -20,3 +20,4 @@ Create Entorno virtual -> python -m venv <name_entorno_virtual>
 Activar Entorno virtual ->
 	P1. cd <name_entorno_virtual>
 	P2. Scripts\activate
+

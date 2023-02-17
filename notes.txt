@@ -11,3 +11,12 @@ pipenv install requests -> Create Pipfile Blank
 pip install pyinstaller
 pyinstaller <file_py>
 pyinstaller --onefile <file_py>
+#
+pip list 					-> Muestra todos los paquetes instalados en Pip
+pip show <package_nombre> 	-> Muestra informacion del Paquete
+
+python -m venv my_venv 						-> Crea Entorno Virtual
+.\my_venv\Scripts\activate 					-> Activa Entorno Virtual
+.\my_venv\Scripts\deactivate				-> Activa Entorno Virtual
+python -m pip freeze > requirements.txt 	-> Genera Archivo de Paquetes Instalados
+python -m pip install -r requirements.txt 	-> Instalar Paquetes desde Archivo
