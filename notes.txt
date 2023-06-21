@@ -17,6 +17,14 @@ pip show <package_nombre> 	-> Muestra informacion del Paquete
 
 python -m venv my_venv 						-> Crea Entorno Virtual
 .\my_venv\Scripts\activate 					-> Activa Entorno Virtual
-.\my_venv\Scripts\deactivate				-> Activa Entorno Virtual
+source ./my_venv/bin/activate 				-> Activa Entorno Virtual (Linux)
+
+.\my_venv\Scripts\deactivate				-> Desactiva Entorno Virtual
 python -m pip freeze > requirements.txt 	-> Genera Archivo de Paquetes Instalados
 python -m pip install -r requirements.txt 	-> Instalar Paquetes desde Archivo
+#
+1. Instala Entorno Virtual: pip install virtualenv 
+2. Crea Ambiente Virtual: python -m virtualenv .venv
+3. Activar Ambiente Virtual: .\.venv\Scripts\activate
+4. Instala .txt: pip install -r .\requirements.txt
+5. Desinstalar todo Pip: pip freeze | xargs pip uninstall -y
