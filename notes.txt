@@ -22,9 +22,17 @@ source ./my_venv/bin/activate 				-> Activa Entorno Virtual (Linux)
 .\my_venv\Scripts\deactivate				-> Desactiva Entorno Virtual
 python -m pip freeze > requirements.txt 	-> Genera Archivo de Paquetes Instalados
 python -m pip install -r requirements.txt 	-> Instalar Paquetes desde Archivo
+python -m pip uninstall -r requirements.txt -> DesInstalar Paquetes desde Archivo
 #
 1. Instala Entorno Virtual: pip install virtualenv 
 2. Crea Ambiente Virtual: python -m virtualenv .venv
 3. Activar Ambiente Virtual: .\.venv\Scripts\activate
 4. Instala .txt: pip install -r .\requirements.txt
 5. Desinstalar todo Pip: pip freeze | xargs pip uninstall -y
+--
+--
+--
+python -m pip install "fastapi[all]"
+
+uvicorn index:app --reload --host 0.0.0.0 --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
